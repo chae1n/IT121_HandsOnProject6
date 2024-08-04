@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form | Julia Johnson</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+          <div class="container">
+            <h1 class="logo">J&J</h1>
+              <ul>
+                <li><a class="current">Order Form</a></li>
+                <li><a href="payment.html">Payment Form</a></li>
+              </ul>
+          </div>
+        </nav>
+        </div>
+    </header>
+    <div class = "container">
+    <h1>J&J Order Form</h1>
+    <form id="orderForm">
+        <label for="productSelect">Select Product:</label>
+        <select id="productSelect">
+            <option value="" disabled selected>Select a product</option>
+            <option value="Black Embroidered Card Holder" data-price="79">Black Embroidered Card Holder - $79</option>
+            <option value="Black Leather Jacket" data-price="99">Black Leather Jacket - $99</option>
+            <option value="Silver Assymetrical Chain" data-price="199">Silver Assymetrical Chain - $199</option>
+        </select>
+        
+        <label for="quantityInput">Quantity:</label>
+        <input type="number" id="quantityInput" min="1" value="1">
+        
+        <button type="button" id="calculateButton">Calculate Total</button>
+        
+        <div id="totalCost">Total Cost: $0</div>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
